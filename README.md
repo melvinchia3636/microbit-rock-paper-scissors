@@ -1,31 +1,37 @@
+# Rock Paper Scissors Game
 
-> Open this page at [https://melvinchia3636.github.io/microbit-rock-paper-scissors/](https://melvinchia3636.github.io/microbit-rock-paper-scissors/)
+This is a simple rock paper scissors game made using micro::bit.
 
-## Use as Extension
+## How to use
 
-This repository can be added as an **extension** in MakeCode.
+When the game started, click Button A for single-player game (player v.s. computer), or multiplayer (player v.s. player). Next, the game mode name will slide into view, followed by the initial score counter (0:0).
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/melvinchia3636/microbit-rock-paper-scissors** and import
+After that, when you see a number showing up on the screen, it's time for you to make choice. The number on the screen indicated which player should make choices for the turn. Note that when you're in singleplayer mode, you'll always be Player 1, and the computer will always be Player 2
 
-## Edit this project ![Build status badge](https://github.com/melvinchia3636/microbit-rock-paper-scissors/workflows/MakeCode/badge.svg)
+To make choice, press on any of the three pins below the board. Below are their represented character:
+
+PIN NUM | CHAR
+------- | ------
+0       | Stone
+1       | Scissors
+2       | Paper
+
+After both players have made their choices, the system will reveal the choice of both players, and the winner checking mechanism will start doing its job.
+
+When you're in singleplayer mode and you've won the computer, a smiley face will show up on the screen, or else a sad face will be presented in front of you. 
+
+Then, the updated score will scroll from right to the left, no matter you're in singleplayer or multiplayer.
+
+To check the score while playing, click on the logo at the top of the board.
+
+When any of the players get to 5 marks, the game will end, and the system will tell which player has won. In singleplayer mode, the system will simply tell you either 'You win' or 'You lost'.
+
+That's it! Restart the game, and you can play the game again. There is no limitation on how many times you can play the game, as long as you're having fun with it.
+
+## Edit this project
 
 To edit this repository in MakeCode.
 
 * open [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * click on **Import** then click on **Import URL**
 * paste **https://github.com/melvinchia3636/microbit-rock-paper-scissors** and click import
-
-## Blocks preview
-
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/melvinchia3636/microbit-rock-paper-scissors/raw/master/.github/makecode/blocks.png)
-
-#### Metadata (used for search, rendering)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
